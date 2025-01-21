@@ -10,3 +10,5 @@ export const  userLogin = z.object({
     email:z.string().email({message:'invalid format ex: mario@gmail.com'}),
     password:z.string().nonempty().min(5, {message:'min 5 characters'})
 }) 
+
+export type UserLogin = z.infer<typeof userLogin>

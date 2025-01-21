@@ -1,9 +1,9 @@
-import { IUser } from "../../../models/user";
+import { IUser} from "../../../models/user";
 
 
 
 
 export interface IUseUserRegister {
-    register: (user:IUser)=> void
-
+    save: (user:IUser)=> void
+    findUser:(email:string) => Promise<IUser[]| []>
 }
