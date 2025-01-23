@@ -21,6 +21,7 @@ export class ValidateCredentials implements IValidateCredentials {
     }
     validateLogin= (user:UserLogin) => {
        try {
+     
        const _user =  userLogin.parse(user) as UserLogin
        return _user
        } catch (error) {

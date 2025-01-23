@@ -1,5 +1,6 @@
 import { IEncrypt } from "./IEncrypt";
-import {hash, compare,genSalt} from 'bcryptjs'
+import bcryptjs from 'bcryptjs'
+const {hash, compare,genSalt} = bcryptjs
 
 
 
